@@ -1,0 +1,19 @@
+.movies-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 2rem;
+}
+
+.movie-card {
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    width: 90%;
+    height: 32px;
+    border-radius: 4px;
+    &:focus {
+      outline: none !important;
+    }
+    margin: 2rem 1rem 2rem 1rem;
+  }

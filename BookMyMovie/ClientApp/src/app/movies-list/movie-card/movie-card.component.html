@@ -1,0 +1,18 @@
+<div class="card">
+    <img class="card-img-top" [src]="movie.poster" alt="Movie Poster" style="cursor: pointer;margin-left: 5px;" (click)="onImageClicked()">
+    <div class="card-body">
+        <h3 class="card-title">{{ movie.title }}</h3>
+    <div class="movie-detail">
+        <p>IMDB Rating</p>
+        <p>{{ movie.imdbRating }}</p>
+    </div>
+    <div class="movie-detail">
+        <p>Language</p>
+        <p>{{ movie.language }}</p>
+    </div>
+    <div class="movie-detail">
+        <p>Location</p>
+        <p>{{ movie.location }}</p>
+    </div>
+    </div>
+  </div>

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace BookMyMovie.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class MoviesController : ControllerBase

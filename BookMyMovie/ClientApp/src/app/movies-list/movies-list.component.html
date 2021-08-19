@@ -1,0 +1,19 @@
+<p>
+      <span style="font-size: 30px;">Movies List</span>
+  </p>
+<div>
+  <input type="text"
+         placeholder="Search..."
+         class="search-box"
+         [(ngModel)]="searchText"
+         (ngModelChange)="onValueChange($event)" />
+
+  <button (click)="onSort('ASC')">Asc</button>
+  <button (click)="onSort('DESC')">Desc</button>
+</div>
+
+<div class="movies-list">
+    <div *ngFor="let movie of filteredMoviesList" class="movie-card">
+        <app-movie-card [movie]="movie"></app-movie-card>
+    </div>
+</div>
