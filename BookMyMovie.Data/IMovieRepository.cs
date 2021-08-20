@@ -7,6 +7,6 @@ namespace BookMyMovie.Data
     public interface IMovieRepository
     {
         IEnumerable<Movie> GetAll();
-        Movie GetById(string id);
+        Movie GetById(int id);
     }
 }

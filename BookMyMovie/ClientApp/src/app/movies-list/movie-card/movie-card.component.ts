@@ -18,6 +18,6 @@ export class MovieCardComponent implements OnInit {
   }
 
   onImageClicked() {
-    this.router.navigateByUrl('/movies/' + this.movie.title)
+    this.router.navigateByUrl('/movies/' + this.movie.id)
   }
 }

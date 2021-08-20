@@ -38,7 +38,7 @@ namespace BookMyMovie.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(string id)
+        public IActionResult GetById(int id)
         {
             try
             {

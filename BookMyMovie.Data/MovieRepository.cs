@@ -39,6 +39,6 @@ namespace BookMyMovie.Data
 
         public IEnumerable<Movie> GetAll() => _movies;
 
-        public Movie GetById(string id) => _movies.FirstOrDefault(x => x.Title == id);
+        public Movie GetById(int id) => _movies.FirstOrDefault(x => x.Id == id);
     }
 }

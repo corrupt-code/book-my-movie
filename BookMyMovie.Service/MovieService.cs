@@ -19,7 +19,7 @@ namespace BookMyMovie.Service
             return _movieRepository.GetAll();
         }
 
-        public Movie GetById(string id)
+        public Movie GetById(int id)
         {
             return _movieRepository.GetById(id);
         }

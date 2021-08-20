@@ -8,6 +8,6 @@ namespace BookMyMovie.Service
     public interface IMovieService
     {
         IEnumerable<Movie> GetAll();
-        Movie GetById(string id);
+        Movie GetById(int id);
     }
 }

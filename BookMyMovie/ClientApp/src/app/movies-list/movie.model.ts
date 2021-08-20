@@ -1,5 +1,5 @@
 export class Movie {
-  movieId?: string;
+  id?: string;
   language?: string;
   location?: string;
   plot?: string;
