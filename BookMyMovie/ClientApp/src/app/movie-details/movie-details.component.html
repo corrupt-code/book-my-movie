@@ -1,0 +1,13 @@
+<button (click)="onBack()">Back</button>
+<div class="card">
+        <img class="card-img-top" [src]="movie.poster" alt="Photo of a Shiba Inu" style="width: 500px;">
+
+    <div class="card-body">
+      <h3 class="card-title">{{ movie.title }}</h3>
+      <p><span style="font-weight: 500; font-size: 20px;">Plot:</span> {{movie.plot}}</p>
+      <p><span style="font-weight: 500; font-size: 20px;">Language:</span> {{movie.language}}</p>
+      <p><span style="font-weight: 500; font-size: 20px;">Location:</span> {{movie.location}}</p>
+      <p><span style="font-weight: 500; font-size: 20px;">IMDB Rating:</span> {{movie.imdbRating}}</p>
+      <p><span style="font-weight: 500; font-size: 20px;">Listing Type:</span> {{movie.listingType}}</p>
+    </div>
+  </div>

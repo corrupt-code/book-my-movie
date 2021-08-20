@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MoviesListComponent } from './movies-list/movies-list.component';
 import { MovieCardComponent } from './movies-list/movie-card/movie-card.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
@@ -23,7 +24,8 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
     CounterComponent,
     FetchDataComponent,
     MoviesListComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -31,10 +33,11 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
     FormsModule,
     ApiAuthorizationModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
-      { path: 'movies-list', component: MoviesListComponent  }
+      { path: '', component: MoviesListComponent, pathMatch: 'full' },
+      //{ path: 'counter', component: CounterComponent },
+      //{ path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
+      { path: 'movies-list', component: MoviesListComponent },
+      { path: 'movies/:id', component: MovieDetailsComponent }
     ])
   ],
   providers: [
